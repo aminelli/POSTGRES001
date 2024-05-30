@@ -54,7 +54,7 @@ services:
     depends_on:
       - postgres_primary
     volumes:
-      - 'postgresql_slave_data:/var/lib/postgresql/datal'
+      - 'postgresql_slave_data:/var/lib/postgresql/data'
 
 
 volumes:
