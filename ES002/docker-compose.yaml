@@ -31,7 +31,7 @@ services:
       - ./00_init.sql:/docker-entrypoint-initdb.d/00_init.sql
       - ./northwind.sql:/docker-entrypoint-initdb.d/northwind.sql
       - 'postgresql_master_data:/var/lib/postgresql/data'
-      - 'postgresql_backup_data:/tmp/backups'
+      # - 'postgresql_backup_data:/tmp/backups'
       
   postgres_replica:
     <<: *postgres-common
