@@ -1,3 +1,3 @@
 @echo off
 
-docker compose -p ms001 down -v
+docker compose -p ms001 down 

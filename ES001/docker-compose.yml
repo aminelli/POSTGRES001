@@ -36,3 +36,5 @@ services:
 volumes:
   postgresql_master_data:
     driver: local
+  postgresql_slave_data:
+    driver: local
