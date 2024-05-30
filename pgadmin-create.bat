@@ -1,0 +1,2 @@
+@echo off
+docker run -d --name pgadmin --hostname pgadmin --network=net-corso -p 5050:5050 -v vol-pgadmin:/var/lib/pgadmin -e PGADMIN_LISTEN_PORT=5050 -e PGADMIN_DEFAULT_EMAIL=corso@etlforma.com -e PGADMIN_DEFAULT_PASSWORD=Corso2024 -e PGADMIN_CONFIG_SERVER_MODE=False dpage/pgadmin4
