@@ -4,7 +4,7 @@ services:
   postgresql-master:
     image: 'docker.io/bitnami/postgresql:11-debian-10'
     ports:
-      - '5432:5432'
+      - '5431:5432'
     volumes:
       - 'postgresql_master_data:/bitnami/postgresql'
     environment:
@@ -19,7 +19,7 @@ services:
   postgresql-slave:
     image: 'docker.io/bitnami/postgresql:11-debian-10'
     ports:
-      - '5433:5432'
+      - '5430:5432'
     depends_on:
       - postgresql-master
     environment:
